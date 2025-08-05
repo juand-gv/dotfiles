@@ -20,18 +20,18 @@
 ```Bash
 dotfiles/
 ├── bash/
-│ └── .bashrc
+│   └── .bashrc
 ├── tmux/
-│ └── .tmux.conf
+│   └── .tmux.conf
 ├── nvim/
 │   └── .config/
 │       └── init.vim
 ├── git/
-│ └── .gitconfig
+│   └── .gitconfig
 └── cheatsheets/
-├── environment_cheatsheet.md
-├── neovim_cheat_sheet.md
-└── tmux_cheat_sheet.md
+    ├── environment_cheatsheet.md
+    ├── neovim_cheat_sheet.md
+    └── tmux_cheat_sheet.md
 ```
 
 ## ⚡ Quick Setup
