@@ -17,3 +17,31 @@
 
 ## 📁 Structure
 
+```Bash
+dotfiles/
+├── bash/
+│ └── .bashrc
+├── tmux/
+│ └── .tmux.conf
+├── nvim/
+│ └── init.vim
+├── git/
+│ └── .gitconfig
+└── cheatsheets/
+├── environment_cheatsheet.md
+├── neovim_cheat_sheet.md
+└── tmux_cheat_sheet.md
+```
+
+## ⚡ Quick Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/juand-gv/dotfiles.git ~/dotfiles
+
+# Symlink configs to your home directory
+ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+```
