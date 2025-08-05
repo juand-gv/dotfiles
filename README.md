@@ -24,7 +24,8 @@ dotfiles/
 ├── tmux/
 │ └── .tmux.conf
 ├── nvim/
-│ └── init.vim
+│   └── .config/
+│       └── init.vim
 ├── git/
 │ └── .gitconfig
 └── cheatsheets/
