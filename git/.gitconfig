@@ -1,5 +1,8 @@
 [user]
         email = jgallegovillada@gmail.com
         name = morbid
+[core]
+        editor = nvim
+
 
 

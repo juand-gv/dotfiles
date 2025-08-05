@@ -44,5 +44,5 @@ git clone https://github.com/juand-gv/dotfiles.git ~/dotfiles
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/nvim/.config/init.vim ~/.config/nvim/init.vim
 ```
