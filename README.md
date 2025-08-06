@@ -29,9 +29,7 @@ dotfiles/
 ├── git/
 │   └── .gitconfig
 └── cheatsheets/
-    ├── environment_cheatsheet.md
-    ├── neovim_cheat_sheet.md
-    └── tmux_cheat_sheet.md
+    └── morbid_cheatsheet.md
 ```
 
 ## ⚡ Quick Setup
