@@ -11,7 +11,7 @@
 
 ## Custom Aliases
 
-> Check ~/.bashrc
+> Check ~/.zsh_aliases
 
 ### Directory Listing (ls) Aliases
 

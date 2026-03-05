@@ -1,0 +1,22 @@
+# ~/.zsh_aliases — morbid's custom aliases for zsh
+# Sourced from ~/.zshrc
+
+# --- Directory listing ---
+alias ll='ls -l'
+alias la='ls -latS'
+alias lh='ls -lahS'
+alias l='ls -CF'
+
+# --- Tmux ---
+alias t='tmux'
+alias ta='tmux attach -t'
+alias tls='tmux ls'
+alias tn='tmux new -s'
+alias tk='tmux kill-session -t'
+alias tks='tmux kill-server'
+
+# --- Neovim ---
+alias nv='nvim'
+
+# --- Glow (Markdown viewer) ---
+alias gw='glow -p'
