@@ -1,0 +1,7 @@
+# ~/.zshrc_extra — morbid's custom zsh startup behavior
+# Sourced from ~/.zshrc
+
+# --- Auto-attach to tmux ---
+if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
+    tmux attach 2>/dev/null || tmux new-session
+fi

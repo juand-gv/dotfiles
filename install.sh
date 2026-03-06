@@ -38,17 +38,25 @@ symlink "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
 # --- zsh aliases ---
 symlink "$DOTFILES_DIR/zsh/.zsh_aliases" "$HOME/.zsh_aliases"
 
-# Append source line to .zshrc if not already present
-ZSHRC="$HOME/.zshrc"
-SOURCE_LINE='[ -f ~/.zsh_aliases ] && source ~/.zsh_aliases'
+# --- zsh extra (startup behavior) ---
+symlink "$DOTFILES_DIR/zsh/.zshrc_extra" "$HOME/.zshrc_extra"
 
-if grep -qF "$SOURCE_LINE" "$ZSHRC" 2>/dev/null; then
-    warn ".zshrc already sources .zsh_aliases — skipping"
-else
-    echo "" >> "$ZSHRC"
-    echo "# morbid aliases" >> "$ZSHRC"
-    echo "$SOURCE_LINE" >> "$ZSHRC"
-    success "Added source line to $ZSHRC"
-fi
+# Append source lines to .zshrc if not already present
+ZSHRC="$HOME/.zshrc"
+
+append_if_missing() {
+    local line="$1"
+    if grep -qF "$line" "$ZSHRC" 2>/dev/null; then
+        warn ".zshrc already has: $line — skipping"
+    else
+        echo "$line" >> "$ZSHRC"
+        success "Added to $ZSHRC: $line"
+    fi
+}
+
+echo "" >> "$ZSHRC"
+echo "# morbid" >> "$ZSHRC"
+append_if_missing '[ -f ~/.zsh_aliases ] && source ~/.zsh_aliases'
+append_if_missing '[ -f ~/.zshrc_extra ] && source ~/.zshrc_extra'
 
 info "Done. Reload your shell: source ~/.zshrc"
