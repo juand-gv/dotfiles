@@ -96,10 +96,10 @@
 
 ### Panes (Split Screen)
 
-- **Split horizontally (below):**  
-  `Ctrl+a "` (double quote)
-- **Split vertically (right):**  
-  `Ctrl+a %`
+- **Split horizontally (below):**
+  `Ctrl+a -`
+- **Split vertically (right):**
+  `Ctrl+a |`
 - **Move between panes:**  
   `Ctrl+a ← ↑ ↓ →` (arrow keys)
 - **Swap panes:**  
@@ -128,12 +128,12 @@
 
 ### Other Useful Commands
 
-- **Synchronize panes:**  
-  `Ctrl+a :setw synchronize-panes on`
-- **Search in buffer:**  
+- **Synchronize panes (toggle):**
+  `Ctrl+a S`
+- **Search in buffer:**
   `Ctrl+a /`
-- **Reload tmux config:**  
-  `Ctrl+a :source-file ~/.tmux.conf`
+- **Reload tmux config:**
+  `Ctrl+a r`
 - **Show key bindings:**  
   `Ctrl+a ?`
 
